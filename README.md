@@ -37,6 +37,6 @@ docker save -o apptainer_fio.docker.tar apptainer_fio:latest
 3, Build a apptainer image file (`*.sif` file) from the docker image file.
 
 ``` sh
-apptainer build apptainer_fio.sif docker-archive://apptainer_fio.docker.tar
+sudo apptainer build apptainer_fio.sif docker-archive://apptainer_fio.docker.tar
 ```
 

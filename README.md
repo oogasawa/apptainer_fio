@@ -4,7 +4,13 @@ An apptainer container image to run fio on top of an environment where fio is no
 
 ## Usage
 
-For example,
+Download the sif file as follows
+
+``` sh
+wget https://github.com/oogasawa/apptainer_fio/raw/main/apptainer_fio.sif
+```
+
+Execute `fio` with apptainer as follows.
 
 ``` sh
 apptainer exec -B /data1:/mnt/data1 apptainer_fio.sif \
